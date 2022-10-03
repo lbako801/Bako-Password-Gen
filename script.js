@@ -16,8 +16,11 @@ function generatePassword() {
     window.alert("Amount of characters must be a NUMBER between 8-128 characters long.")
     return
   }
-
   
+  var passnum = window.confirm("Do you want numeric characters in the generated password?")
+  var passspecial = window.confirm("Do you want special characters in the generated password?")
+  var passupper = window.confirm("Do you want uppercase characters in the generated password?")
+  var passlower = window.confirm("Do you want lowercase characters in the generated password?")
 
 }
 
