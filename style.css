@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #0309aa;
 }
 
 .wrapper {
@@ -27,19 +27,25 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: whitesmoke;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0309aa ;
   border-radius: 5px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  border-radius: 3rem;
+  box-shadow:  20px 20px 46px #020564,
+             -20px -20px 46px #040df0;
+  color: whitesmoke;
 }
 
 .card-header::after {
@@ -74,10 +80,10 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color:#0309aa;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  box-shadow:  8px 8px 16px #020564,
+             -8px -8px 16px #040df0;
   color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
@@ -86,6 +92,14 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  box-sizing: border-box;
+  border: dashed 3px transparent;
+  transition: all 400ms ease;
+}
+
+.btn:hover {
+  border: whitesmoke dashed 3px;
+  box-sizing: border-box;
 }
 
 button[disabled] {

@@ -28,7 +28,7 @@ function generatePassword() {
   
   var lowercaseletters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   var uppercaseletters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
-
+  
   var choices = []
   var finishedpass = ""
 // The if statements below check if the user selected ok or cancel to the prompts and then returns the boolean to the choices array
@@ -55,9 +55,7 @@ function generatePassword() {
   }
   
   return (finishedpass)
-
 }
-
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -66,6 +64,5 @@ function writePassword() {
   passwordText.value = password;
 
 }
-
 // Add event listener to generate button
-  generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword);
